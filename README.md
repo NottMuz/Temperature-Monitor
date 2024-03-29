@@ -25,5 +25,7 @@ This is the final lab project for METE 2030U (Electronics Applications in Mechat
 
 - Now knowing that this is how an analogRead() value is mapped in the case of a resistor, we can rearrange the previous voltage divide equation [2] (not by itself, but when it is substituted into [6]) to find R.
   
-   - (7)
+   - (7) **` R = (10000.0 / ((1024.0 / tempReading - 1)))`**
+   - Something that I cannot explain yet due to my own lack of understanding (any clarification would be appreciated), is that because the 10 Kohm is a pull-down resistor, the division in [7] actually becomes multiplication. I'll have to do more research into why that is, but it seems to be the case as I get accurate readings from the device.
+   - (8 and final one) **` R = (10000.0 * ((1024.0 / tempReading - 1)))`**
 
