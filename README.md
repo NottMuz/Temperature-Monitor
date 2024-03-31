@@ -25,9 +25,9 @@ This is the final lab project for METE 2030U (Electronics Applications in Mechat
 
 - Now knowing that this is how an analogRead() value is mapped in the case of a resistor, we can rearrange the previous voltage divide equation [2] (not by itself, but when it is substituted into [6]) to find R.
   
-   - (7) **` R = (10000.0 / ((1024.0 / tempReading - 1)))`**
+   - (7) **` R = (10000.0 / ((1024.0 / digitalThermistorVoltage - 1)))`**
    - Something that I cannot explain yet due to my own lack of understanding (any clarification would be appreciated), is that because the 10 Kohm is a pull-down resistor, the division in [7] actually becomes multiplication. I'll have to do more research into why that is, but it seems to be the case as I get accurate readings from the device.
-   - (8 and final one) **` R = (10000.0 * ((1024.0 / tempReading - 1)))`**
+   - (8 and final one) **` R = (10000.0 * ((1024.0 / digitalThermistorVoltage - 1)))`**
 
-- I have to go to bed now, as it is late. However when I am free to finish this repo I will come back to provide a summarization of the Steinhart-Hart Thermistor equation. However for this use case, it is good enough to understand that you can pretty much just plug in your R and play (not really that simple but will have to do for now).
+- I have to go to bed now, as it is late. However, when I am free to finish this repo I will come back to provide a summarization of the Steinhart-Hart Thermistor equation. For this use case, it is good enough to understand that you can pretty much just plug in your R and play (not really that simple but will have to do for now).
 
