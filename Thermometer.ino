@@ -11,7 +11,7 @@
 #include <RTClib.h>
 
 // Define DHT sensor pin and type
-#define DHTPIN 2
+#define DHTPIN 4
 #define DHTTYPE DHT11
 //initialize a DHT object to use the library
 DHT dht(DHTPIN, DHTTYPE);
@@ -20,7 +20,7 @@ DHT dht(DHTPIN, DHTTYPE);
 RTC_DS3231 rtc;
 
 //pin which the temperature will be read from
-int tempPin = 0;
+int tempPin = A0;
 
 //digital I/O pins that are used for the LED indicators
 int blueLed = 3;
